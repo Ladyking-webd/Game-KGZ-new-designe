@@ -1,0 +1,67 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#level-title {
+  font-size: 3rem;
+  margin: 40px 0;
+  color: #FEF2BF;
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ROW */
+.row {
+  display: flex;
+}
+
+/* BUTTON */
+.btn {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  border: 8px solid black;
+  border-radius: 50%; /* 🔥 SA KI FE YO VIN CERCLE */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* COLORS */
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+/* CLICK EFFECT */
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/* GAME OVER */
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
