@@ -1,67 +1,123 @@
 body {
-  text-align: center;
-  background-color: #011F3F;
   margin: 0;
   padding: 0;
+  text-align: center;
+  background: linear-gradient(180deg, #011f3f, #00152c);
   font-family: Arial, sans-serif;
+  color: white;
 }
 
 #level-title {
-  font-size: 3rem;
-  margin: 40px 0;
-  color: #FEF2BF;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 2.7rem;
+  color: #fef2bf;
 }
 
-/* CONTAINER */
+#instruction {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #dfe9f3;
+}
+
+.top-bar {
+  margin: 20px 0 10px;
+}
+
+.top-bar button {
+  background-color: #fef2bf;
+  color: #011f3f;
+  border: none;
+  padding: 12px 18px;
+  margin: 8px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.top-bar button:hover {
+  opacity: 0.9;
+}
+
+.score-board {
+  margin: 10px 0 20px;
+  font-size: 1.1rem;
+}
+
+.score-board p {
+  margin: 6px 0;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 }
 
-/* ROW */
 .row {
   display: flex;
+  justify-content: center;
 }
 
-/* BUTTON */
 .btn {
   width: 150px;
   height: 150px;
-  margin: 15px;
+  margin: 14px;
   border: 8px solid black;
-  border-radius: 50%; /* 🔥 SA KI FE YO VIN CERCLE */
+  border-radius: 50%;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
 }
 
-/* COLORS */
+.btn:active {
+  transform: scale(0.96);
+}
+
 .green {
-  background-color: green;
+  background-color: #00a74a;
 }
 
 .red {
-  background-color: red;
+  background-color: #9f0f17;
 }
 
 .yellow {
-  background-color: yellow;
+  background-color: #cca707;
 }
 
 .blue {
-  background-color: blue;
+  background-color: #094a8f;
 }
 
-/* CLICK EFFECT */
 .pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
+  box-shadow: 0 0 25px white;
+  background-color: grey !important;
 }
 
-/* GAME OVER */
 .game-over {
-  background-color: red;
-  opacity: 0.8;
+  background: #8b0000 !important;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  #level-title {
+    font-size: 2rem;
+  }
+
+  .btn {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+
+  .top-bar button {
+    width: 140px;
+    font-size: 0.95rem;
+  }
 }
