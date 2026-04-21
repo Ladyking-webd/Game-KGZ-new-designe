@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simon Game</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <h1 id="level-title">Press A Key to Start</h1>
+  <h1 id="level-title">Simon Game</h1>
+  <p id="instruction">Tap Start to play</p>
+
+  <div class="top-bar">
+    <button id="start-btn">Start Game</button>
+    <button id="sound-btn">Sound: On</button>
+  </div>
+
+  <div class="score-board">
+    <p>Level: <span id="current-level">0</span></p>
+    <p>High Score: <span id="high-score">0</span></p>
+  </div>
 
   <div class="container">
     <div class="row">
